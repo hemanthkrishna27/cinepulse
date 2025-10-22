@@ -17,10 +17,23 @@
     </nav>
   </header>
 
-  <main class="content">
-    <h1>Privacy Policy</h1>
-    <iframe src="https://gist.github.com/hemanthkrishna27/3271d86f8295fe6dff655e616eda451c/raw" width="100%" height="500px"></iframe>
-  </main>
+<main class="content">
+  <h1>Privacy Policy</h1>
+  <pre id="gist-content">Loading...</pre>
+</main>
+
+<script>
+  fetch("https://gist.githubusercontent.com/hemanthkrishna27/3271d86f8295fe6dff655e616eda451c/raw")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("gist-content").textContent = data;
+    })
+    .catch(err => {
+      document.getElementById("gist-content").textContent = "Failed to load privacy policy.";
+      console.error(err);
+    });
+</script>
+
 
   <footer>
     <p>© 2025 Cinepulse</p>
