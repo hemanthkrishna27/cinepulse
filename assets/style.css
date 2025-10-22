@@ -92,3 +92,12 @@ footer {
   padding: 1.5rem;
   margin-top: 60px;
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
