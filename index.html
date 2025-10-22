@@ -3,106 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cinepulse - Real-time Entertainment News</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fafafa;
-      color: #222;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #111;
-      color: #fff;
-      text-align: center;
-      padding: 1.5rem 1rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      font-size: 1rem;
-      color: #ccc;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section {
-      margin-bottom: 2.5rem;
-    }
-    h2 {
-      border-bottom: 2px solid #ff3b3b;
-      padding-bottom: 0.4rem;
-      margin-bottom: 1rem;
-      color: #ff3b3b;
-    }
-    a {
-      color: #ff3b3b;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background-color: #111;
-      color: #ccc;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-  </style>
+  <title>Cinepulse | Entertainment News App</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <header>
-    <h1>Cinepulse</h1>
-    <p>Your real-time source for entertainment news and updates</p>
+  <header class="navbar">
+    <div class="logo">🎬 Cinepulse</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        Cinepulse is a real-time entertainment news app that delivers the latest updates
-        from Hollywood and beyond. Stay connected with movie trailers, celebrity
-        stories, and trending entertainment topics — all in one pulse.
-      </p>
-    </section>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Stay in the Pulse of Entertainment</h1>
+      <p>Hollywood and beyond — get the latest movie buzz, celeb gossip, and pop culture updates in real time.</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>
-        For inquiries, feedback, or content-related concerns, please reach out to us:
-      </p>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:hemanthk2798@gmail.com">hemanthk2798@gmail.com</a></li>
-        <li><strong>Developer:</strong> Hemanth Krishna</li>
-        <li><strong>Privacy Policy:</strong> <a href="https://gist.github.com/hemanthkrishna27/3271d86f8295fe6dff655e616eda451c" target="_blank">View Privacy Policy</a></li>
-      </ul>
-    </section>
-
-    <section id="sources">
-      <h2>Content Sources</h2>
-      <p>
-        Cinepulse aggregates entertainment news from publicly available sources such as:
-      </p>
-      <ul>
-        <li>moviefone.com</li>
-        <li>screenrant.com</li>
-        <li>collider.com</li>
-      </ul>
-      <p>
-        We do not own or claim rights over the news content. All rights belong to their respective owners.
-      </p>
-    </section>
-  </main>
+  <section class="features">
+    <h2>Why Cinepulse?</h2>
+    <div class="feature-grid">
+      <div class="card fade-in">
+        <h3>⚡ Real-Time News</h3>
+        <p>Get updates the moment they break, from trusted movie and entertainment sources.</p>
+      </div>
+      <div class="card fade-in">
+        <h3>🎥 Global Coverage</h3>
+        <p>Follow stories from Hollywood, Bollywood, and global cinema — all in one app.</p>
+      </div>
+      <div class="card fade-in">
+        <h3>💬 Smart Curation</h3>
+        <p>News you care about, powered by clean, modern design and instant access.</p>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    © 2025 Cinepulse. All rights reserved.
+    <p>© 2025 Cinepulse • Made with ❤️ by Hemanth Krishnapillai</p>
   </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
